@@ -1,0 +1,10 @@
+CREATE DATABASE movies_sprint2;
+
+CREATE TABLE IF NOT EXISTS movies(
+	id  BIGSERIAL PRIMARY KEY,
+    name CHAR(50) UNIQUE NOT NULL,
+    description VARCHAR,
+    duration INTEGER NOT NULL,
+    price INTEGER NOT NULL
+);
+
